@@ -65,8 +65,6 @@ python ${PROJECT_DIR}/train_openfold.py \
 
 If you intend to train Alphafold2, you can run:
 
-For the latter, run:
-
 ```bash
 python ${PROJECT_DIR}/train_openfold.py \
     --train_data_dir=${train_data_dir} \
