@@ -37,6 +37,14 @@ With the environment active, compile OpenFold's CUDA kernels with
 python3 setup.py install
 ```
 
+## Data Preparation
+
+CASP14 dataset can be downloaded from [casp14](https://predictioncenter.org/download_area/CASP14/)
+DB5.5 dataset can be downloaded from [db55](https://github.com/octavian-ganea/equidock_public). 
+BCR, VH-VL, AB-AG datasets can be downloaded from [pdb](https://www.rcsb.org/#Category-download).
+
+### Pretrained Models
+
 
 ## Train
 
@@ -64,6 +72,8 @@ python ${PROJECT_DIR}/train_openfold.py \
 ```
 
 If you intend to train Alphafold2, you can run:
+
+For the latter, run:
 
 ```bash
 python ${PROJECT_DIR}/train_openfold.py \
@@ -112,6 +122,8 @@ python ${PROJECT_DIR}/run_pretrained_openfold.py \
     --pair_factor \
     --flow_attn \
 ```
+
+
 
 ```
 
