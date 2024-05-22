@@ -50,9 +50,9 @@ BCR, VH-VL, AB-AG datasets can be downloaded from [pdb](https://www.rcsb.org/#Ca
 
 ## Train
 
-The sample training script is /bin/run_train.sh . "flow_attn" denotes using BAA and "pair_factor" denotes using VLD. 
+The sample training script is /bin/run_train.sh . "flow_attn" denotes using BFA. 
 
-If you intend to train Lightformer, you can run:
+If you intend to train Liteformer, you can run:
 
 ```bash
 python ${PROJECT_DIR}/train_openfold.py \
@@ -70,7 +70,6 @@ python ${PROJECT_DIR}/train_openfold.py \
     --resume_from_ckpt=${resume_from_ckpt} \
     --resume_model_weights_only=${resume_model_weights_only} \
     --flow_attn \
-    --pair_factor \
 ```
 
 If you intend to train Alphafold2, you can run:
@@ -97,7 +96,7 @@ python ${PROJECT_DIR}/train_openfold.py \
 
 ## Inference
 
-To run inference on a sequence or multiple sequences using a set of Lightformer's
+To run inference on a sequence or multiple sequences using a set of Liteformer's
 pretrained parameters, run e.g.:
 
 ```bash
@@ -121,7 +120,6 @@ python ${PROJECT_DIR}/run_pretrained_openfold.py \
     --skip_amber_relax \
     --reproduce \
     --dev \
-    --pair_factor \
     --flow_attn \
 ```
 
