@@ -1,9 +1,9 @@
 
 
 
-# Lightformer
+# Liteformer
 
-A PyTorch reproduction of Lightformer based on DeepMind's
+A PyTorch reproduction of Liteformer based on DeepMind's
 [AlphaFold 2](https://github.com/deepmind/alphafold).
 
 
